@@ -1,0 +1,133 @@
+.sidebar{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    border-right: 0.5px solid rgb(230,227,227);
+    min-height: 100vh;
+
+
+
+    //theme toggle
+    background-color: white;
+    color: black;
+
+
+
+
+    .top{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center; //center horizontally
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: rebeccapurple;
+        }
+    }
+    .center{
+        padding-left: 20px;
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+
+            .title{
+                font-size: 10px;
+                color: gray;
+                margin-top: 15px;
+                margin-bottom: 4px;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                position: relative;
+
+                &:hover{
+                    background-color: rgb(224, 200, 247);
+                }
+
+                .icon{
+                    font-size: 20px;
+                    color: rebeccapurple;
+                    padding-right: 7px;
+                }
+                span{
+                    font-size: 16px
+                }
+
+                .value{
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: red;
+                    border-radius: 50%;
+                    top: 2px;
+                    right: 48px;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+
+        span{
+            margin-top: 20px;
+            font-size: 10px;
+            color: gray;
+
+        }
+
+        .color{
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            .coloropt{
+                width: 22px;
+                height: 22px;
+                border-radius: 5px;
+                border: 1px solid rebeccapurple;
+                cursor: pointer;
+                margin: 3px;
+    
+                &:nth-child(1){
+                    background-color: whitesmoke;
+                }
+                &:nth-child(2){
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    hr{
+        border: 0.5px solid rgb(230,227,227);
+    }
+}
